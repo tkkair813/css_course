@@ -1,0 +1,40 @@
+/* Universal selector. select for all. Sometime used for style reset.*/
+* {
+  font: bold;
+}
+
+body {
+  font-size: 22px;
+}
+
+/* Group selector: Impact both h1 and h2 components */
+h1,
+h2 {
+  color: blue;
+}
+
+/* nested element. Searches for span element in p tag. But better to use class.*/
+p span {
+  text-transform: uppercase;
+  background-color: aliceblue;
+}
+
+/* Element selector. */
+p {
+  color: purple;
+}
+
+/* Don't use it. This means that styles are unorganized.*/
+p {
+  color: red !important;
+}
+
+/* Class selector. Most common way to style components. */
+.gray {
+  color: gray;
+}
+
+/* ID selector. You should only have 1 ID. CSS with ID is discouraged. Use class or body selectors. */
+#second {
+  font-style: italic;
+}

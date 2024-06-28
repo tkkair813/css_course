@@ -1,0 +1,39 @@
+/* Sometimes good to reset the style, so you can troubleshoot the sizes. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Here since you used em, it'll be same as if you did 1.5 * 1.5 rem. Since it's relative to self font-size */
+.container {
+  border: 2px dashed red;
+  /* You can have  */
+  border-left: 3px dotted blue;
+  border-right: 5px ridge red;
+  font-size: 1.5rem;
+  padding: 1.5em;
+  /* Order goes from Top Bottom Left and Right */
+  margin: 1.5em 2em 2em;
+  /* margin-top: 1.5em;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  margin-left: 2em; */
+  /* Outline is similar to borders, but it doesn't take space.  */
+  outline: 5px solid purple;
+  /* This way you can set the outline inside the box model. */
+  outline-offset: -10px;
+}
+
+.circle {
+  /* Setting the margin to auto to horizontally center the element within its container. */
+  margin: 3rem auto;
+  background-color: gold;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 50px;
+  outline: 2px solid red;
+  outline-offset: 0.25rem;
+}

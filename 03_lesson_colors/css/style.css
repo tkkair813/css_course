@@ -1,0 +1,35 @@
+/* You can set with the name of the text that html recognizes */
+body {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: papayawhip;
+  color: darkblue;
+}
+
+/* You can set with red green blue */
+p {
+  color: rgb(255, 0, 0);
+}
+
+/* Adding a is alpha for opacity of the color. */
+p {
+  color: rgba(255, 0, 0, 0.5);
+}
+
+/* You can also do hex code. 
+Hex code is essentially same as rgb. 
+Two digits represents r g or b. from 00 being the weakest and FF being highest. */
+p {
+  color: #000000;
+}
+
+/* If the pairs match you can just do short hand for hex code. */
+p {
+  color: #000;
+}
+
+/* Theres also HSL and HSLA for hue, saturation, and light */
+p {
+  color: hsl(0, 52%, 42%);
+}
