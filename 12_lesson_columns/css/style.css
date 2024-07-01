@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+}
+
+.columns {
+  column-count: 4;
+  /* Never will go below this width. If below, reduce the number of columns per row. */
+  column-width: 250px;
+  /* Short term that includes count and width */
+  columns: 4 250px;
+  /* Adds divider between the columns to separate */
+  column-rule: 3px solid black;
+  column-gap: 3rem;
+}
+
+.columns p {
+  margin-top: 0;
+}
+
+.columns h2 {
+  margin-top: 0;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  /* Describes the break between pages or columns. Setting to to avoid prevents some of the padding from spilling into the next column */
+  break-inside: avoid;
+}
+
+/* You need to do columns and quote, because we already set the columns p and this increases the specificity. */
+.columns .quote {
+  margin-top: 2rem;
+  font-size: 3rem;
+  text-align: center;
+  color: black;
+  /* Spans the entire columns. */
+  column-span: all;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
