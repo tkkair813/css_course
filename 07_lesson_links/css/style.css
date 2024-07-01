@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  padding: 10%;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  /* Remove the link underline */
+  text-decoration: none;
+  cursor: pointer;
+  color: yellow;
+}
+
+/* Pseudo class deals with the status of the element. */
+/* Pseudo class has more specificity than the anchor element. 
+This is why defining a:visited {} before a {} allows the style to be applied.  
+*/
+a:visited {
+  color: purple;
+}
+/* Focus allows users to go through via tab action */
+a:hover,
+a:focus {
+  color: red;
+  background-color: gold;
+}
+
+a:active {
+  color: blue;
+}
