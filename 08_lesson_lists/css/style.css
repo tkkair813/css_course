@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  padding: 5% 10%;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+ol {
+  /* Changes the list */
+  list-style-type: lower-roman;
+}
+
+ul {
+  list-style-type: square;
+  text-align: center;
+  /* List element goes inside and text align center aligns both bullet point and text to center */
+  list-style-position: inside;
+  line-height: 1.5;
+  list-style-image: url('../images/checkmark.png');
+  /* Short hand list-style can handle multiple things. 1 default list-style-type 
+  2 list-style-image 3 list-style-position */
+  list-style: square url('../images/checkmark.png') inside;
+}
+
+/* nth-child pseudo class allows you to select the nth child in the list. */
+ul li:nth-child(2) {
+  color: red;
+}
+
+/* nth-child pseudo class can also pass in odd or even*/
+ul li:nth-child(odd) {
+  color: blue;
+}
+
+/* Pseudo element. This is for the bullet point styling in a list. */
+::marker {
+  color: red;
+  font-family: fantasy;
+  font-size: 1em;
+  /* Sets the content of the bullet point. This makes all the bullet points to this content. This can also be svg or fontawesome icons. */
+  content: 'only $5 >>';
+}
