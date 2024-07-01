@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  background-color: lightgray;
+}
+
+.opposite {
+  background-color: #333;
+  color: whitesmoke;
+  /* You can't apply margin to inline element like span. */
+  margin-top: 100px;
+  /* You can apply margin to inline elements though. */
+  padding: 1.5rem;
+  /* You can however set the display to inline-block. This way, it'll set properties like margin. 
+  Compared to inline, you can set the margin or width/height of the element.
+  Compared to block, you can have this in line with other elements.
+  */
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: right;
+  background-color: lightgray;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  margin-inline: 0.5rem;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+}
+
+li a:hover,
+li a:focus {
+  text-decoration: underline;
+}
