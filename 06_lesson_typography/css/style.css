@@ -1,0 +1,37 @@
+/* You can also import directly from the style via import rather than adding in html header. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* 
+Font size you would want to make sure the browser setting is applied. 
+You want to use rem for it. 
+*/
+body {
+  padding: 10%;
+  font-size: 2rem;
+}
+
+/* Text settings that are not affected by the font */
+.textProperties {
+  text-decoration: underline;
+  text-transform: capitalize;
+  /* text-decoration: line-through;
+  text-transform: uppercase; */
+
+  /* Makes the start and end the same */
+  text-align: justify;
+  text-indent: 2em;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+
+.fontProperties {
+  font-weight: bolder;
+  font-style: italic;
+  /* Common family: serif(academic papers) san-serif(common web font) monospace(same space) arial*/
+  font-family: monospace;
+  /* You can have multiple(font stack) in order. In case "Courier New" doesn't exist it has fallback options. */
+  /* Use websafe font family to ensure that all users have access to the font styles */
+  font-family: 'Courier New', Courier, monospace;
+  /* You can load in font styles to the link tag. See index.html's Header component */
+  font-family: 'Roboto', sans-serif;
+}
